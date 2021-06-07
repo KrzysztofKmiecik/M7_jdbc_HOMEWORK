@@ -49,4 +49,9 @@ public class VehicleRepositoryImpl implements VehicleRepository{
         String sql="UPDATE vehicle SET vehicle.name=? WHERE vehicle.id=?";
         jdbcTemplate.update(sql,myVehicle.getName(),myVehicle.getId());
     }
+
+    public void createTable() {
+        String sql = "CREATE TABLE vehicle(id int, name varchar(255) )";
+        jdbcTemplate.update(sql);
+    }
 }
