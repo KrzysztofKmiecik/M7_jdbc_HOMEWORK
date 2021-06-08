@@ -22,6 +22,7 @@ public class VehicleService {
         return repository.findAll();
     }
 
+
     public void deleteVehicle(long id){
         repository.deleteVehicle(id);
     }

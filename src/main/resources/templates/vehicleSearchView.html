@@ -11,6 +11,11 @@
 <h1>Vehicles</h1>
 
 <table class="table table-striped table-hover table-sm">
+    <form th:action="@{/vehicles}" th:object="${newVehicle}" method="post">
+        <p><input type="text" th:field="*{productionDate}">productionDate</p>
+        <p><input type="submit" th:value="SearchVehicle"></p>
+    </form>
+
     <thead>
     <tr>
         <th>Id</th>
@@ -29,13 +34,7 @@
 
 </table>
 <br>
-<form th:action="@{/vehicles}" th:object="${newVehicle}" method="post">
-    <p><input type="text" th:field="*{id}">id</p>
-    <p><input type="text" th:field="*{mark}">mark</p>
-    <p><input type="text" th:field="*{model}">model</p>
-    <p><input type="text" th:field="*{productionDate}">productionDate</p>
-    <p><input type="submit" th:value="AddVehicle"></p>
-</form>
+
 
 
 <script src="/webjars/jquery/3.0.0/jquery.min.js"></script>
