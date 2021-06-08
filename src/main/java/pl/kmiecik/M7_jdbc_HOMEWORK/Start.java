@@ -18,15 +18,16 @@ public class Start {
     @EventListener(ApplicationReadyEvent.class)
     public void init(){
 
-       /* service.addVehicle(new Vehicle(1L,"BMW"));
-        service.addVehicle(new Vehicle(2L,"Polonez"));
-        service.addVehicle(new Vehicle(3L,"Fiat"));*/
+      /*  service.addVehicle(new Vehicle(1L,"BMW","i3",1980));
+        service.addVehicle(new Vehicle(2L,"Polonez","Caro",1970));
+        service.addVehicle(new Vehicle(3L,"Fiat","Ducato",1990));
+        service.addVehicle(new Vehicle(4L,"Audi","Quatro",2000));*/
 
 
 
-       // service.deleteVehicle(1);
+      // service.deleteVehicle(4);
 
-      //  service.updateVehicle(new Vehicle(3L,"Ducato"));
+     //   service.updateVehicle(new Vehicle(3L,"Fiat","Panda",1991));
         service.findAll().forEach(System.out::println);
     }
 

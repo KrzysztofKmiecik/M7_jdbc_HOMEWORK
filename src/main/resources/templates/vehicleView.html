@@ -14,16 +14,29 @@
     <thead>
     <tr>
         <th>Id</th>
-        <th>Name</th>
+        <th>Mark</th>
+        <th>Model</th>
+        <th>ProductionDate</th>
     </tr>
     </thead>
 
     <tr th:each="vehicle:${vehicles}">
         <td th:text="${vehicle.getId()}"></td>
-        <td th:text="${vehicle.getName()}"></td>
+        <td th:text="${vehicle.getMark()}"></td>
+        <td th:text="${vehicle.getModel()}"></td>
+        <td th:text="${vehicle.getProductionDate()}"></td>
     </tr>
 
 </table>
+
+<form th:action="@{/vehicles}" th:object="${newVehicle}" method="post">
+    <p><input type="text" th:field="*{id}">id</p>
+    <p><input type="text" th:field="*{mark}">mark</p>
+    <p><input type="text" th:field="*{model}">model</p>
+    <p><input type="text" th:field="*{productionDate}">productionDate</p>
+    <p><input type="submit" th:value="AddVehicle">AddButton</p>
+</form>
+
 
 <script src="/webjars/jquery/3.0.0/jquery.min.js"></script>
 <script src="/webjars/popper.js/1.14.3/popper.min.js"></script>

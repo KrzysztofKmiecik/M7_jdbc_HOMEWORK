@@ -26,7 +26,7 @@ public class DbConfig {
 
   /*  @EventListener(ApplicationReadyEvent.class)
     public void start(){
-        String sql="CREATE TABLE vehicle(id int, name varchar(255) )"  ;
+        String sql="CREATE TABLE vehicle(id int, mark varchar(255),model varchar(255),production int )"  ;
         getJdbcTemplate().update(sql);
     }*/
 

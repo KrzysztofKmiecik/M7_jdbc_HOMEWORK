@@ -27,15 +27,15 @@ public class VehicleRepositoryImpl implements VehicleRepository{
         return jdbcTemplate.query(sql, new RowMapper<Vehicle>() {
             @Override
             public Vehicle mapRow(ResultSet resultSet, int i) throws SQLException {
-                return new Vehicle(resultSet.getLong("id"),resultSet.getString("name"));
+                return new Vehicle(resultSet.getLong("id"),resultSet.getString("mark"),resultSet.getString("model"),resultSet.getInt("production"));
             }
         }) ;
     }
 
     @Override
     public void addVehicle(Vehicle vehicle) {
-        String sql ="INSERT INTO vehicle VALUES(?,?)" ;
-        jdbcTemplate.update(sql,vehicle.getId(),vehicle.getName());
+        String sql ="INSERT INTO vehicle VALUES(?,?,?,?)" ;
+        jdbcTemplate.update(sql,vehicle.getId(),vehicle.getMark(),vehicle.getModel(),vehicle.getProductionDate());
     }
 
     @Override
@@ -46,8 +46,8 @@ public class VehicleRepositoryImpl implements VehicleRepository{
 
     @Override
     public void updateVehicle(Vehicle myVehicle) {
-        String sql="UPDATE vehicle SET vehicle.name=? WHERE vehicle.id=?";
-        jdbcTemplate.update(sql,myVehicle.getName(),myVehicle.getId());
+        String sql="UPDATE vehicle SET vehicle.mark=?, vehicle.model=?,vehicle.production=? WHERE vehicle.id=?";
+        jdbcTemplate.update(sql,myVehicle.getMark(),myVehicle.getModel(),myVehicle.getProductionDate(),myVehicle.getId());
     }
 
     public void createTable() {
