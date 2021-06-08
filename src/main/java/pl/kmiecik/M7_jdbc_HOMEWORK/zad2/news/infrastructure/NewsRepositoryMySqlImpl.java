@@ -23,7 +23,7 @@ public class NewsRepositoryMySqlImpl implements NewsRepository {
 
     @Override
     public void save(News news) {
-        String sql="INSERT INTO news SET news.id=?,news.news=?,news.published=?";
+        String sql="INSERT INTO news VALUES(?,?,?)";
         jdbcTemplate.update(sql,news.getId(),news.getNews(),news.getPublishedAt());
     }
 
@@ -40,7 +40,7 @@ public class NewsRepositoryMySqlImpl implements NewsRepository {
 
     @Override
     public void update(News news) {
-        String sql="UPDATE news WHERE news.id=?";
+        String sql="UPDATE news SET news.news=?, news.published=? WHERE news.id=?";
         jdbcTemplate.update(sql,news.getId());
     }
 }
