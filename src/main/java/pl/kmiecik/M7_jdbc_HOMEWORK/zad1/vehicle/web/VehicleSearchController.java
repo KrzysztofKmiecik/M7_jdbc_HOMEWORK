@@ -12,6 +12,10 @@ import pl.kmiecik.M7_jdbc_HOMEWORK.zad1.vehicle.application.port.VehicleService;
 import pl.kmiecik.M7_jdbc_HOMEWORK.zad1.vehicle.domain.Limit;
 import pl.kmiecik.M7_jdbc_HOMEWORK.zad1.vehicle.domain.Vehicle;
 
+import javax.validation.Valid;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Controller
@@ -25,23 +29,47 @@ public class VehicleSearchController {
     public VehicleSearchController(VehicleServiceImpl service) {
 
         this.service = service;
-        this.limit = new Limit(0, 0);
+        this.limit = new Limit(2010, 2015);
     }
 
     @GetMapping
     public String getVahicle(Model model) {
         List<Vehicle> findByProductionRange = service.findByProductionYearLimit(this.limit.getMin(), this.limit.getMax());
         model.addAttribute("vehicles", findByProductionRange);
-        model.addAttribute("newLimit", new Limit());
+        model.addAttribute("newLimit", this.limit);
         return "vehicleSearchView";
     }
 
     @PostMapping
-    public String setLimit(@ModelAttribute Limit limit) {
-        this.limit.setMax(limit.getMax());
-        this.limit.setMin(limit.getMin());
+    public String setLimit(@Valid @ModelAttribute LimitCommand command) {
+        this.limit = command.toLimit();
         return "redirect:/vehiclesSearch";
     }
 
 
+    private static class LimitCommand {
+        @NotNull
+        @Min(1000)
+        private int min;
+        @NotNull
+        @Max(9999)
+        private int max;
+
+        public LimitCommand(int min, int max) {
+            this.min = min;
+            this.max = max;
+        }
+
+        public Limit toLimit() {
+            return new Limit(this.getMin(), this.getMax());
+        }
+
+        public int getMin() {
+            return min;
+        }
+
+        public int getMax() {
+            return max;
+        }
+    }
 }

@@ -10,23 +10,12 @@ public class Limit {
         this.max = max;
     }
 
-    public Limit() {
-    }
-
     public int getMin() {
         return min;
     }
 
-    public void setMin(final int min) {
-        this.min = min;
-    }
-
     public int getMax() {
         return max;
-    }
-
-    public void setMax(final int max) {
-        this.max = max;
     }
 
     @Override
