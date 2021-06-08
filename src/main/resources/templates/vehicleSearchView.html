@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="/webjars/font-awesome/5.11.2/css/v4-shims.min.css">
 </head>
 <body>
-<h1>Vehicles</h1>
+<h1>VehiclesSearch By Production Year</h1>
 
-<table class="table table-striped table-hover table-sm">
-    <form th:action="@{/vehicles}" th:object="${newVehicle}" method="post">
-        <p><input type="text" th:field="*{productionDate}">productionDate</p>
+
+    <form th:action="@{/vehiclesSearch}" th:object="${newLimit}" method="post">
+        <p><input type="text" th:field="*{min}">min</p>
+        <p><input type="text" th:field="*{max}">max</p>
         <p><input type="submit" th:value="SearchVehicle"></p>
     </form>
 
+    <table class="table table-striped table-hover table-sm">
     <thead>
     <tr>
         <th>Id</th>

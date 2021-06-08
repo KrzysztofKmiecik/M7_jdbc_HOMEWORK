@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class VehicleService {
@@ -29,5 +30,11 @@ public class VehicleService {
 
     public void updateVehicle(Vehicle vehicle) {
         repository.updateVehicle(vehicle);
+    }
+
+    public List<Vehicle> findByProductionYearLimit(int min, int max) {
+        return repository.findAll().stream()
+                .filter(vehicle -> (vehicle.getProductionDate()>=min)&&(vehicle.getProductionDate()<=max))
+                .collect(Collectors.toList());
     }
 }
