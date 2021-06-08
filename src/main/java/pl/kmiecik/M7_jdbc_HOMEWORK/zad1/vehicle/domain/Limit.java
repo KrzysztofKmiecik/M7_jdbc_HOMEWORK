@@ -1,11 +1,11 @@
-package pl.kmiecik.M7_jdbc_HOMEWORK;
+package pl.kmiecik.M7_jdbc_HOMEWORK.zad1.vehicle.domain;
 
 public class Limit {
 
     private int min;
     private int max;
 
-    public Limit(int min, int max) {
+    public Limit(final int min, final int max) {
         this.min = min;
         this.max = max;
     }
@@ -17,7 +17,7 @@ public class Limit {
         return min;
     }
 
-    public void setMin(int min) {
+    public void setMin(final int min) {
         this.min = min;
     }
 
@@ -25,7 +25,7 @@ public class Limit {
         return max;
     }
 
-    public void setMax(int max) {
+    public void setMax(final int max) {
         this.max = max;
     }
 

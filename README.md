@@ -3,7 +3,7 @@
 ## 1.Napisz aplikacje,
 - [x]  która z poziomu GUI pozwala na dodawanie i wyświetlanie pojazdów znajdujących się w bazie danych.
 - [x] Pojazd ma mieć pola, które umożliwią przechowanie marki, modelu, koloru oraz daty produkcji.
-- [ ] Stwórz formularz z poziomu, którego będzie możliwe na wyświetlanie pojazdów z konkretnego przedziału dat. 
+- [x] Stwórz formularz z poziomu, którego będzie możliwe na wyświetlanie pojazdów z konkretnego przedziału dat. 
   Np. wyświetlenie wszystkich pojazdów w bazie, których data produkcji jest w zakresie 2010 – 2015.
 
 ## 2. Napisz aplikacje, 
