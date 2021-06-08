@@ -1,0 +1,269 @@
+GET https://newsapi.org/v2/everything?q=Apple&from=2021-06-08&sortBy=popularity&apiKey=078e6e31bb955432f9d251d7030c18d9d
+
+
+{
+    "status": "ok",
+    "totalResults": 3478,
+    "articles": [
+        {
+            "source": {
+                "id": "engadget",
+                "name": "Engadget"
+            },
+            "author": "https://www.engadget.com/about/editors/richard-lawler",
+            "title": "Apple's 'Find My' network locates iOS 15 devices even if they're off or erased",
+            "description": "iOS 15 is making Find My tracking more persistent -- now it will locate iPhones and iPads that have been turned off or erased..",
+            "url": "https://www.engadget.com/ios-15-find-my-network-tracking-upgrades-032304589.html",
+            "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-06/697a5310-c808-11eb-9ff9-c44cebe0e20a",
+            "publishedAt": "2021-06-08T03:23:04Z",
+            "content": "Apple's WWDC 2021 briefing is over, but the list of new features coming to its platforms is long enough that many are still popping up. One section to pay attention to on the iOS 15 Preview explains … [+1132 chars]"
+        },
+        {
+            "source": {
+                "id": "engadget",
+                "name": "Engadget"
+            },
+            "author": "https://www.engadget.com/about/editors/daniel-cooper",
+            "title": "Adobe optimizes Illustrator, InDesign and Lightroom Classic for M1 Macs",
+            "description": "Adobe says that the M1-native versions are significantly faster than their Intel equivalents..",
+            "url": "https://www.engadget.com/adobe-indesign-illustrator-lightroom-classic-m1-macs-native-130024955.html",
+            "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-06/8dc78390-c84a-11eb-bfef-a6401c23022b",
+            "publishedAt": "2021-06-08T13:00:24Z",
+            "content": "Adobe is today launching M1 native versions of Illustrator, InDesign and Lightroom Classic as part of a raft of Creative Cloud updates. The new launch bundles in a bunch of quality of life tweaks to … [+1028 chars]"
+        },
+        {
+            "source": {
+                "id": "engadget",
+                "name": "Engadget"
+            },
+            "author": "https://www.engadget.com/about/editors/richard-lawler",
+            "title": "Ford's Maverick starts at less than $20k with a hybrid engine and built-in LTE",
+            "description": "The first pickup truck to come standard with a hybrid powertrain is the Ford Maverick, and you can buy one for around $20,000..",
+            "url": "https://www.engadget.com/ford-maverick-hybrid-pickup-100057297.html",
+            "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-06/548d0e30-c83e-11eb-bf42-53291797875f",
+            "publishedAt": "2021-06-08T10:00:57Z",
+            "content": "After showing off its F-150 Hybrid, Mustang Mach-E and the electric F-150 Lightning, Ford's latest electrified addition to a mostly-carless lineup is this compact pickup, the Maverick. Set to go on s… [+2081 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "James Vincent",
+            "title": "macOS and tvOS are getting spatial audio support with the AirPods Pro and Max",
+            "description": "Apple is making spatial audio available on more platforms, including macOS and tvOS. The feature will work with Apple’s high-end AirPods Pro and AirPods Max headphones, though it’s not clear exactly when support will be available or for which apps.",
+            "url": "https://www.theverge.com/2021/6/8/22523914/macos-tvos-spatial-audio-support-airpods-pro-max",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/GgYTGueLaZ7M4WDalhoo_ZIft3Y=/0x146:2880x1654/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22644643/Screen_Shot_2021_06_08_at_10.48.24_AM.png",
+            "publishedAt": "2021-06-08T16:18:04Z",
+            "content": "Apple is making its immersive 3D sound available on more platforms\r\nIf you buy something from a Verge link, Vox Media may earn a commission. See our ethics statement.\r\nApple is extending support for … [+1190 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "James Vincent",
+            "title": "Samsung has given its smart home app SmartThings a fresh interface",
+            "description": "Samsung has updated the user interface for its smart home SmartThings app. The app now has a fresher, cleaner look, oriented around five main screens: favorites, devices, life, automations, and menu.",
+            "url": "https://www.theverge.com/2021/6/8/22524228/samsung-smart-home-smartthings-app-new-interface",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/Ex2T6V3icguy5WNP-XJJf5XpIxA=/227x0:2131x997/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22645024/ST_2021_0527_ux_2.5_graphics_b2.jpg",
+            "publishedAt": "2021-06-08T15:00:00Z",
+            "content": "A lighter look oriented around five new screens\r\nIf you buy something from a Verge link, Vox Media may earn a commission. See our ethics statement.\r\nSamsung has updated the user interface for its sma… [+1961 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Sarah Perez",
+            "title": "Apple Music launches Spatial Audio and Lossless Audio, adds Spatial Audio playlists",
+            "description": "Last month, Apple announced it would soon add lossless audio streaming and Spatial Audio with support for Dolby Atmos to its Apple Music subscription at no extra charge. That upgrade has now gone live, Apple announced this morning — though many noticed the ad…",
+            "url": "http://techcrunch.com/2021/06/08/apple-music-launches-spatial-audio-and-lossless-audio-adds-spatial-audio-playlists/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/apple-music-icon-ios-2020.jpg?w=711",
+            "publishedAt": "2021-06-08T15:11:54Z",
+            "content": "Last month, Apple announced it would soon add lossless audio streaming and Spatial Audio with support for Dolby Atmos to its Apple Music subscription at no extra charge. That upgrade has now gone liv… [+2712 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Sarah Perez",
+            "title": "Apple’s RealityKit 2 allows developers to create 3D models for AR using iPhone photos",
+            "description": "At its Worldwide Developer Conference, Apple announced a significant update to RealityKit, its suite of technologies that allow developers to get started building AR (augmented reality) experiences. With the launch of RealityKit 2, Apple says developers will …",
+            "url": "http://techcrunch.com/2021/06/08/apples-realitykit-2-allows-developers-to-create-3d-models-for-ar-using-iphone-photos/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/06/Screen-Shot-2021-06-08-at-12.10.01-PM.jpg?w=711",
+            "publishedAt": "2021-06-08T16:39:59Z",
+            "content": "At its Worldwide Developer Conference, Apple announced a significant update to RealityKit, its suite of technologies that allow developers to get started building AR (augmented reality) experiences. … [+2981 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Ron Miller",
+            "title": "U.S. PC shipments soar 73% in the first quarter as Apple falls from top spot",
+            "description": "With pent up demand from the pandemic, Canalys reports that U.S. PC shipments were up 73% over the same period last year. That added up to a total of 34 million units sold. While Apple had a good quarter with sales up 36%, it was surpassed by HP, which sold 1…",
+            "url": "http://techcrunch.com/2021/06/08/u-s-pc-shipments-soar-73-in-the-first-quarter-as-apple-falls-from-top-spot/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/06/GettyImages-1228228782.jpg?w=600",
+            "publishedAt": "2021-06-08T18:26:14Z",
+            "content": "With pent up demand from the pandemic, Canalys reports that U.S. PC shipments were up 73% over the same period last year. That added up to a total of 34 million units sold. While Apple had a good qua… [+2207 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Brian Heater",
+            "title": "Sony’s best-in-class noise-cancelling earbuds finally get a pricey upgrade",
+            "description": "It’s been two years since Sony raised the bar for wireless earbuds. Six months before Apple upped its own game with the AirPods Pro, the WF-1000XM3 set a new standard for sound and active noise cancelation. Since then, few companies have been able to match – …",
+            "url": "http://techcrunch.com/2021/06/08/sonys-best-in-class-noise-cancelling-earbuds-finally-get-a-pricey-upgrade/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/06/CMC_9454.jpg?w=600",
+            "publishedAt": "2021-06-08T16:00:40Z",
+            "content": "Its been two years since Sony raised the bar for wireless earbuds. Six months before Apple upped its own game with the AirPods Pro, the WF-1000XM3 set a new standard for sound and active noise cancel… [+3411 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Brian Heater",
+            "title": "Turntable.fm competitor tt.fm launches beta app for iOS and Android",
+            "description": "You’d be forgiven for being confused. I’ve been following this story and am currently writing it and I’m still fairly confused. But Turntable (or tt.fm), not to be confused with Turntable.fm (the name of both the original and recently re-released social music…",
+            "url": "http://techcrunch.com/2021/06/08/turntable-fm-competitor-tt-fm-launches-beta-app-for-ios-and-android/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/06/CMC_9479.jpg?w=600",
+            "publishedAt": "2021-06-08T17:50:08Z",
+            "content": "Youd be forgiven for being confused. Ive been following this story and am currently writing it and I’m still fairly confused. But Turntable (or tt.fm), not to be confused with Turntable.fm (the name … [+2524 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "Andrew Liszewski",
+            "title": "Adobe Claims Creative Apps Optimized for M1 Macs Now 80% Faster",
+            "description": "Seven months after Apple revealed its homegrown M1 processor, we’re finally starting to see its true potential as more third-party apps arrive with native support. Now Adobe has updated a batch of longtime staples that, at least according to Adobe, show impre…",
+            "url": "https://gizmodo.com/adobe-claims-creative-apps-optimized-for-m1-macs-now-80-1847055452",
+            "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/a1c77cd0c5aa548577c1fa39f8d959a2.jpg",
+            "publishedAt": "2021-06-08T18:40:00Z",
+            "content": "Seven months after Apple revealed its homegrown M1 processor, were finally starting to see its true potential as more third-party apps arrive with native support. Now Adobe has updated a batch of lon… [+3482 chars]"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Haley Henschel",
+            "title": "Amazon has the Apple Watch Series 6 on sale ahead of Prime Day (and watchOS 8)",
+            "description": "SAVE UP TO $90: Select versions of the Apple Watch Series 6 (WiFi and WiFi + Cellular) are on sale on Amazon for up to 18% off as of June 8.\n\nWatch this space: Apple's signature wearable is gearing up for a minor facelift. \nAnnounced during the company's Worl…",
+            "url": "https://mashable.com/shopping/early-prime-day-deal-june-8-apple-watch-series-6/",
+            "urlToImage": "https://mondrian.mashable.com/2021%252F06%252F08%252Fd3%252F8722bfbe1b5d4982ac6a7c806e006550.7a189.png%252F1200x630.png?signature=BY5fZv4XLEV5TfmUtmBCoj5aYWY=",
+            "publishedAt": "2021-06-08T15:54:17Z",
+            "content": "SAVE UP TO $90: Select versions of the Apple Watch Series 6 (WiFi and WiFi + Cellular) are on sale on Amazon for up to 18% off as of June 8.\r\nWatch this space: Apple's signature wearable is gearing u… [+2131 chars]"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Jae Thomas",
+            "title": "Try your hand at coding iOS apps with this training on sale",
+            "description": "TL;DR: Learn the basics of SwiftUI with the SwiftUI developer training, which is on sale for 95% off. As of June 8, get it for only $24.99.\n\nIf you're an aspiring iOS app developer, this $25 SwiftUI developer training can help.\nTaught by Nick Walter, an iOS d…",
+            "url": "https://mashable.com/shopping/june-8-swiftui-developer-course/",
+            "urlToImage": "https://mondrian.mashable.com/2021%252F06%252F08%252F81%252Fe1a2a38a626d464694a5523e0cf3eb75.897f0.jpg%252F1200x630.jpg?signature=zGMFUeRcm7O9OVnMS7KLM3OdvG8=",
+            "publishedAt": "2021-06-08T12:48:35Z",
+            "content": "TL;DR: Learn the basics of SwiftUI with the SwiftUI developer training, which is on sale for 95% off. As of June 8, get it for only $24.99.\r\nIf you're an aspiring iOS app developer, this $25 SwiftUI … [+1371 chars]"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Sasha Lekach",
+            "title": "Ford’s hybrid Maverick truck is a cheaper alternative to the F-150 Lightning",
+            "description": "So it's not the all-electric Ford F-150 Lightning, but Ford's newest truck still has an electric boost.\nThe Ford Maverick was revealed Tuesday as a compact hybrid truck. It'll get a combined 500 miles of range on a single tank of gas thanks to its hybrid engi…",
+            "url": "https://mashable.com/article/ford-maverick-hybrid-truck/",
+            "urlToImage": "https://mondrian.mashable.com/2021%252F06%252F08%252Ff0%252F6edd47b55d6d4e3886c480ff2132b025.028a7.jpg%252F1200x630.jpg?signature=mr2XFFkRZbviyxhbhLiL-c_VkLY=",
+            "publishedAt": "2021-06-08T10:00:00Z",
+            "content": "So it's not the all-electric Ford F-150 Lightning, but Ford's newest truck still has an electric boost.\r\nThe Ford Maverick was revealed Tuesday as a compact hybrid truck. It'll get a combined 500 mil… [+2876 chars]"
+        },
+        {
+            "source": {
+                "id": "ars-technica",
+                "name": "Ars Technica"
+            },
+            "author": "Jennifer Ouellette",
+            "title": "Apple TV’s summer preview includes tantalizing glimpses of Foundation series",
+            "description": "It's not much, but we'll take it.",
+            "url": "https://arstechnica.com/gaming/2021/06/apple-tvs-summer-preview-includes-tantalizing-glimpses-of-foundation-series/",
+            "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2021/06/asimov2-760x380.jpg",
+            "publishedAt": "2021-06-08T19:25:16Z",
+            "content": "21 with 17 posters participating\r\nLast summer, we got our first glimpse of Apple TV's hotly anticipated adaptation of Isaac Asimov's Foundation series of novels when Apple dropped a teaser trailer du… [+4768 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Reuters",
+            "title": "EXCLUSIVE Apple in talks with CATL, BYD over battery supplies for its electric car -sources - Reuters",
+            "description": "Apple Inc (AAPL.O) is in early-stage talks with China's CATL (300750.SZ) and BYD (002594.SZ),  about the supply of batteries for its planned electric vehicle, four people with knowledge of the matter said.",
+            "url": "https://www.reuters.com/world/china/exclusive-apple-talks-with-catl-byd-over-battery-supplies-its-electric-car-2021-06-08/",
+            "urlToImage": "https://www.reuters.com/resizer/B1oKQ-FNHJfmTQhJ51q2Z-bR1hc=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/UPPXU5QSWBNKBHKXTKRPZ3QTDA.jpg",
+            "publishedAt": "2021-06-08T05:59:00Z",
+            "content": "Apple Inc (AAPL.O) is in early-stage talks with Chinas CATL (300750.SZ) and BYD (002594.SZ), about the supply of batteries for its planned electric vehicle, four people with knowledge of the matter s… [+2458 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Reuters Staff",
+            "title": "China stocks end lower as Sino-U.S. tensions weigh, liquor makers dive - Reuters",
+            "description": "China stocks fell on Tuesday, weighed down by consumer and liquor firms, as investors worried about lofty valuations and Sino-U.S. tensions.",
+            "url": "https://www.reuters.com/article/china-stocks-close-idUSAZN0191O8",
+            "urlToImage": "https://s1.reutersmedia.net/resources_v2/images/rcom-default.png?w=800",
+            "publishedAt": "2021-06-08T07:45:00Z",
+            "content": "By Reuters Staff\r\nSHANGHAI, June 8 (Reuters) - China stocks fell on Tuesday, weighed down by consumer and liquor firms, as investors worried about lofty valuations and Sino-U.S. tensions.\r\n** The blu… [+1669 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Reuters Staff",
+            "title": "UPDATE 1-Taiwan's May exports surge, COVID-19 may cloud outlook - Reuters",
+            "description": "Taiwan's exports rose for an 11th straight month in May, and far exceeded expectations, boosted by global demand for microchips and hi-tech gadgets in the work-from-home pandemic boom, but the island's own COVID-19 spike could cloud the outlook.",
+            "url": "https://www.reuters.com/article/taiwan-economy-exports-idUSL3N2NB2BU",
+            "urlToImage": "https://s1.reutersmedia.net/resources_v2/images/rcom-default.png?w=800",
+            "publishedAt": "2021-06-08T08:53:00Z",
+            "content": "By Reuters Staff\r\n(Recasts, adds details)\r\n* Taiwan May exports +38.6% y/y vs +26.0% Reuters poll\r\n* May imports +40.9% y/y vs +25.7% in poll\r\n* Finance ministry expects June exports +27% to +31% y/y… [+2258 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Stephen Culp",
+            "title": "Wall Street languid as \"meme stock\" frenzy hogs spotlight - Reuters",
+            "description": "Wall Street stocks wavered near the starting line on Tuesday as a lack of clear market catalysts kept institutional investors on the sidelines, while retail traders kept the rally of so-called meme stocks alive.",
+            "url": "https://www.reuters.com/business/wall-street-languid-meme-stock-frenzy-hogs-spotlight-2021-06-08/",
+            "urlToImage": null,
+            "publishedAt": "2021-06-08T18:33:00Z",
+            "content": "Wall Street stocks wavered near the starting line on Tuesday as a lack of clear market catalysts kept institutional investors on the sidelines, while retail traders kept the rally of so-called meme s… [+3234 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "David Lawder,David Morgan",
+            "title": "U.S. Republicans vow to oppose Yellen's G7 tax deal, casting doubt on its future - Reuters",
+            "description": "Several top U.S. Senate Republicans on Monday rejected Treasury Secretary Janet Yellen's G7 deal to impose a global minimum corporate tax and allow more countries to tax big multinational firms, raising questions about the U.S. ability to implement a broader …",
+            "url": "https://www.reuters.com/world/us/us-republicans-vow-oppose-yellens-g7-tax-deal-casting-doubt-its-future-2021-06-08/",
+            "urlToImage": "https://www.reuters.com/resizer/pKnnel7hHkRiKxVW2Y0EjeqTV5k=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/4IMOBVAOSJI2HPPQ4R2ALKRCLE.jpg",
+            "publishedAt": "2021-06-08T00:56:00Z",
+            "content": "U.S. Treasury Secretary Janet Yellen speaks during a news conference, after attending the G7 finance ministers meeting, at Winfield House in London, Britain June 5, 2021. Justin Tallis/Pool via REUTE… [+4216 chars]"
+        }
+    ]
+}

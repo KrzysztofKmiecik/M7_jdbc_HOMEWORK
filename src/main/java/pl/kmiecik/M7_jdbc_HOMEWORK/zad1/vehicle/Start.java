@@ -1,4 +1,4 @@
-package pl.kmiecik.M7_jdbc_HOMEWORK;
+package pl.kmiecik.M7_jdbc_HOMEWORK.zad1.vehicle;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
