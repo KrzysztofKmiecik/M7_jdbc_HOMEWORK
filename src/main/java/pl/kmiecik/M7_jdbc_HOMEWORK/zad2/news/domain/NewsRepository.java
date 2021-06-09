@@ -10,4 +10,6 @@ public interface NewsRepository {
     void update(News news);
 
     List<News> findAllById(long id);
+
+    void deleteAll();
 }

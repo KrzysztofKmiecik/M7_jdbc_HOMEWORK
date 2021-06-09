@@ -28,7 +28,7 @@ class Start {
         // service.deleteVehicle(4);
 
         //   service.updateVehicle(new Vehicle(3L,"Fiat","Panda",1991));
-        service.findAll().forEach(System.out::println);
+      //  service.findAll().forEach(System.out::println);
     }
 
 }

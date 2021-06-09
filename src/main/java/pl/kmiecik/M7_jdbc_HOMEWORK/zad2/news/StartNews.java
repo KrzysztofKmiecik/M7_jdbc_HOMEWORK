@@ -19,8 +19,8 @@ public class StartNews {
 
     @EventListener(ApplicationReadyEvent.class)
     public void Init() {
-        newsClientApiService.loadNewsFromApiToDb();
-
+      //  newsClientApiService.loadNewsFromApiToDb();
+        //service.deleteAll();
     }
 
 

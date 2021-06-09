@@ -58,4 +58,10 @@ public class NewsRepositoryMySqlImpl implements NewsRepository {
         };
        return jdbcTemplate.query(sql, rowMapper, id);
     }
+
+    @Override
+    public void deleteAll() {
+        String sql="DELETE FROM news"  ;
+        jdbcTemplate.update(sql);
+    }
 }

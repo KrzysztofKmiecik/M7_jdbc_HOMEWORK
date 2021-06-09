@@ -37,5 +37,10 @@ public class NewsServiceUseCase implements NewsService {
         repository.update(news);
     }
 
+    @Override
+    public void deleteAll() {
+        repository.deleteAll();
+    }
+
 
 }

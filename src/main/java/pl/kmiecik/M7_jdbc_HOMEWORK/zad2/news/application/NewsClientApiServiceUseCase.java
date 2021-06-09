@@ -31,7 +31,6 @@ public class NewsClientApiServiceUseCase implements NewsClientApiService {
         articleList.stream()
                 .forEach(article -> {
                     news.setId(++counter);
-
                     news.setNews(article.getDescription().replaceFirst("^(.{80}).*", "$1")); // limit to 80 chars
                     news.setPublishedAt(article.getPublishedAt());
                     service.save(news);

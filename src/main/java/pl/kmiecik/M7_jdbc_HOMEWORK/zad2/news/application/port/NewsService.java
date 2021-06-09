@@ -9,4 +9,5 @@ public interface NewsService {
     void save(News news);
     List<News> getAllNews();
     void updateNews(News news);
+    void deleteAll();
 }
