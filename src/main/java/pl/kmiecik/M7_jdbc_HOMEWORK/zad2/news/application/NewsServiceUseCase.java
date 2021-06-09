@@ -19,7 +19,12 @@ public class NewsServiceUseCase implements NewsService {
 
     @Override
     public void save(News news) {
-        repository.save(news);
+        List<News> allById = repository.findAllById(news.getId());
+        if (allById.isEmpty()) {
+            repository.save(news);
+        } else {
+            allById.forEach(myNews -> repository.update(myNews));
+        }
     }
 
     @Override

@@ -8,4 +8,6 @@ public interface NewsRepository {
     List<News> findAll();
 
     void update(News news);
+
+    List<News> findAllById(long id);
 }

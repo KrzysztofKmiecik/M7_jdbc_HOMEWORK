@@ -10,6 +10,8 @@ import pl.kmiecik.M7_jdbc_HOMEWORK.zad2.news.domain.NewsRepository;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
 
 @Repository
 public class NewsRepositoryMySqlImpl implements NewsRepository {
@@ -33,7 +35,7 @@ public class NewsRepositoryMySqlImpl implements NewsRepository {
         return jdbcTemplate.query(sql, new RowMapper<News>() {
             @Override
             public News mapRow(ResultSet resultSet, int i) throws SQLException {
-                return  new News(resultSet.findColumn("id"),resultSet.getString("news"),resultSet.getString("published"));
+                return  new News(resultSet.getLong("id"),resultSet.getString("news"),resultSet.getString("published"));
             }
         });
     }
@@ -41,6 +43,19 @@ public class NewsRepositoryMySqlImpl implements NewsRepository {
     @Override
     public void update(News news) {
         String sql="UPDATE news SET news.news=?, news.published=? WHERE news.id=?";
-        jdbcTemplate.update(sql,news.getId());
+        jdbcTemplate.update(sql,news.getNews(),news.getPublishedAt(),news.getId());
+    }
+
+    @Override
+    public List<News> findAllById(long id) {
+
+        String sql="SELECT * FROM news WHERE news.id=?";
+        RowMapper<News> rowMapper=new RowMapper<News>() {
+            @Override
+            public News mapRow(ResultSet resultSet, int i) throws SQLException {
+                return new News(resultSet.getLong("id"),resultSet.getString("news"),resultSet.getString("published"));
+            }
+        };
+       return jdbcTemplate.query(sql, rowMapper, id);
     }
 }

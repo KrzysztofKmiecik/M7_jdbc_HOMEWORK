@@ -3,16 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>News</title>
-  <link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/webjars/font-awesome/5.11.2/css/all.min.css">
-  <link rel="stylesheet" href="/webjars/font-awesome/5.11.2/css/v4-shims.min.css">
+    <link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/webjars/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/webjars/font-awesome/5.11.2/css/v4-shims.min.css">
 </head>
 <body>
 
 <h1>News</h1>
 
+<table class="table table-striped table-hover table-sm">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>News</th>
+        <th>PublishedAt</th>
 
+    </tr>
+    </thead>
 
+    <tr th:each="news:${newsList}">
+        <td th:text="${news.getId()}"></td>
+        <td th:text="${news.getNews()}"></td>
+        <td th:text="${news.getPublishedAt()}"></td>
+    </tr>
+
+</table>
+<br>
+<form th:action="@{/news}" th:object="${newNews}" method="post">
+    <p><input type="text" th:field="*{id}">id</p>
+    <p><input type="text" th:field="*{news}">news</p>
+    <p><input type="text" th:field="*{publishedAt}">published</p>
+    <p><input type="submit" th:value="UpdateNews"></p>
+</form>
 
 
 <script src="/webjars/jquery/3.0.0/jquery.min.js"></script>

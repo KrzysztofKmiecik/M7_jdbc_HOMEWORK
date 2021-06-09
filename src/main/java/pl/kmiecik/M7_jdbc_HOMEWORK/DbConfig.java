@@ -30,7 +30,7 @@ class DbConfig {
         getJdbcTemplate().update(sql);
     }*/
 
-   /* @EventListener(ApplicationReadyEvent.class)
+    /*@EventListener(ApplicationReadyEvent.class)
     public void start(){
         String sql="CREATE TABLE news(id int, news varchar(255), published varchar (255))"  ;
         getJdbcTemplate().update(sql);

@@ -7,6 +7,6 @@
   Np. wyświetlenie wszystkich pojazdów w bazie, których data produkcji jest w zakresie 2010 – 2015.
 
 ## Zad2. Napisz aplikacje, 
-- [ ] która pobiera z wybranego API newsy,
-- [ ] a następnie zapisuje je do bazy danych.
+- [x] która pobiera z wybranego API newsy,
+- [x] a następnie zapisuje je do bazy danych.
 - [ ] Utwórz GUI, które umożliwia na przeglądanie newsów i ich edycje.
