@@ -9,4 +9,4 @@
 ## Zad2. Napisz aplikacje, 
 - [x] która pobiera z wybranego API newsy,
 - [x] a następnie zapisuje je do bazy danych.
-- [ ] Utwórz GUI, które umożliwia na przeglądanie newsów i ich edycje.
+- [x] Utwórz GUI, które umożliwia na przeglądanie newsów i ich edycje.

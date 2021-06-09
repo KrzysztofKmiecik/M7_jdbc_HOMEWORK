@@ -8,7 +8,7 @@ import pl.kmiecik.M7_jdbc_HOMEWORK.zad2.news.domain.NewsRepository;
 import java.util.List;
 
 @Service
-public class NewsServiceUseCase implements NewsService {
+class NewsServiceUseCase implements NewsService {
 
     private final NewsRepository repository;
 

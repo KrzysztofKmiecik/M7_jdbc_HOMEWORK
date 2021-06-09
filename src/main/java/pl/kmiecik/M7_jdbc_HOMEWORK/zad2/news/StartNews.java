@@ -7,7 +7,7 @@ import pl.kmiecik.M7_jdbc_HOMEWORK.zad2.news.application.port.NewsClientApiServi
 import pl.kmiecik.M7_jdbc_HOMEWORK.zad2.news.application.port.NewsService;
 
 @Component
-public class StartNews {
+class StartNews {
 
     private final NewsClientApiService newsClientApiService;
     private final NewsService service;
@@ -19,8 +19,8 @@ public class StartNews {
 
     @EventListener(ApplicationReadyEvent.class)
     public void Init() {
-      //  newsClientApiService.loadNewsFromApiToDb();
-        //service.deleteAll();
+        newsClientApiService.loadNewsFromApiToDb();
+        // service.deleteAll();
     }
 
 

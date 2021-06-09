@@ -10,9 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import pl.kmiecik.M7_jdbc_HOMEWORK.zad2.news.application.port.NewsService;
 import pl.kmiecik.M7_jdbc_HOMEWORK.zad2.news.domain.News;
 
+import javax.validation.Valid;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 @Controller
 @RequestMapping("/news")
-public class NewsController {
+class NewsController {
     private final NewsService service;
 
     @Autowired
@@ -21,15 +25,47 @@ public class NewsController {
     }
 
     @GetMapping
-    public String getNews(Model model){
-        model.addAttribute("newsList",service.getAllNews());
-        model.addAttribute("newNews",new News());
+    public String getNews(Model model) {
+        model.addAttribute("newsList", service.getAllNews());
+        model.addAttribute("newNews", new News());
         return "newsView";
     }
 
     @PostMapping
-    public String updateNews(@ModelAttribute News news){
-        service.updateNews(news);
+    public String updateNews(@Valid @ModelAttribute NewsCommand command) {
+        service.updateNews(command.toNews());
         return "redirect:/news";
+    }
+
+    private static class NewsCommand {
+
+        @NotNull
+        private long id;
+        @NotBlank
+        private String news;
+        @NotBlank
+        private String publishedAt;
+
+        public NewsCommand(long id, String news, String publishedAt) {
+            this.id = id;
+            this.news = news;
+            this.publishedAt = publishedAt;
+        }
+
+        public long getId() {
+            return id;
+        }
+
+        public String getNews() {
+            return news;
+        }
+
+        public String getPublishedAt() {
+            return publishedAt;
+        }
+
+        public News toNews() {
+            return new News(getId(), getNews(), getPublishedAt());
+        }
     }
 }

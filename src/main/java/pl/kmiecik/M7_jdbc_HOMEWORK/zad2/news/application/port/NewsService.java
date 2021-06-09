@@ -6,8 +6,8 @@ import java.util.List;
 
 public interface NewsService {
 
-    void save(News news);
+    void save(final News news);
     List<News> getAllNews();
-    void updateNews(News news);
+    void updateNews(final News news);
     void deleteAll();
 }
