@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 @ControllerAdvice
 @Slf4j
-public class GlobalExceptionHandler {
+class GlobalExceptionHandler {
 
     @ExceptionHandler(BindException.class)
     public ResponseEntity<Object> catchInputValidationException(BindException ex) {

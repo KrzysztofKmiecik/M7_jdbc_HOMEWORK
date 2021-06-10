@@ -20,7 +20,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/vehicles")
-public class VehicleController {
+class VehicleController {
 
     private final VehicleService service;
 

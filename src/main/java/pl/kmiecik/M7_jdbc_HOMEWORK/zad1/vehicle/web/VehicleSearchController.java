@@ -20,7 +20,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/vehiclesSearch")
-public class VehicleSearchController {
+class VehicleSearchController {
 
     private final VehicleService service;
     private Limit limit;
